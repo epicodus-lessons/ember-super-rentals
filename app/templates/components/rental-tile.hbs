@@ -1,1 +1,7 @@
-<li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li>
+<li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}
+  {{#if isImageShowing }}
+    <p><img src={{rental.image}} alt={{rental.type}} ></p>
+  {{else}}
+    <button>Show image</button>
+  {{/if}}
+</li>
