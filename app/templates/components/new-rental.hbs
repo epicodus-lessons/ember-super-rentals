@@ -1,1 +1,5 @@
-{{yield}}
+{{#if addNewRental}}
+  <p>Display new rental form - to be replaced with form code soon.</p>
+{{else}}
+  <button {{action 'rentalFormShow'}}>New Rental</button>
+{{/if}}
